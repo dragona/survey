@@ -1,11 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <!--  Start : Your code should be within this block -->
+    <TextView
+        android:id="@+id/textView_four_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="12sp"
+        android:text="Question4:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:typeface="sans"
+        app:fontFamily="casual" />
 
+    <TextView
+        android:id="@+id/textView_four_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:lineSpacingExtra="12sp"
+        android:text="What function does your phone have now?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="24sp"
+        android:typeface="sans"
+        app:fontFamily="serif" />
+
+    <RadioButton
+        android:id="@+id/radioButton_four_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:lineSpacingExtra="12sp"
+        android:text="Music functions"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <RadioButton
+        android:id="@+id/radioButton_four_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="12sp"
+        android:text="Photo functions"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <RadioButton
+        android:id="@+id/radioButton_four_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="12sp"
+        android:text="Game functions"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <RadioButton
+        android:id="@+id/radioButton_four_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="12sp"
+        android:text="Buisness functions(Word,Excel,etc)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <RadioButton
+        android:id="@+id/radioButton_four_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="12sp"
+        android:text="GPS functions"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <RadioButton
+        android:id="@+id/radioButton_four_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="12sp"
+        android:text="Data functions(WLAN,Bluetooth,etc)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <RadioButton
+        android:id="@+id/radioButton_four_7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="12sp"
+        android:text="Others"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/button_four"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="30dp"
+        android:background="#009688"
+        android:lineSpacingExtra="12sp"
+        android:onClick="onclick_buttonfour"
+        android:text="Next"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:typeface="serif" />
 
     <!-- END    : Your code should be within this block -->
 
