@@ -1,12 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <!--  Start : Your code should be within this block -->
 
+    <TextView
+        android:id="@+id/textView_seven_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="12sp"
+        android:text="Question7:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:typeface="sans"
+        app:fontFamily="casual" />
 
+    <TextView
+        android:id="@+id/textView_seven_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:lineSpacingExtra="12sp"
+        android:text="In which condition will you buy a new phone?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="24sp"
+        android:typeface="sans"
+        app:fontFamily="serif" />
+
+    <RadioButton
+        android:id="@+id/radioButton_seven_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:lineSpacingExtra="12sp"
+        android:text="When the old phone has been used for year or two.(but it still works)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <RadioButton
+        android:id="@+id/radioButton_seven_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="12sp"
+        android:text="When the old phone has been used for more than three years.(but it still works)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <RadioButton
+        android:id="@+id/radioButton_seven_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="12sp"
+        android:text="When the old phone breaks down."
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <RadioButton
+        android:id="@+id/radioButton_seven_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="12sp"
+        android:text="When a new phone is released."
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <RadioButton
+        android:id="@+id/radioButton_seven_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:lineSpacingExtra="12sp"
+        android:text="Others"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/button_seven"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:background="#009688"
+        android:lineSpacingExtra="12sp"
+        android:onClick="onclick_buttonseven"
+        android:text="Next"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:typeface="serif" />
     <!-- END    : Your code should be within this block -->
 
 </LinearLayout>

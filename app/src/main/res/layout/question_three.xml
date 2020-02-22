@@ -1,12 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <!--  Start : Your code should be within this block -->
+    <TextView
+        android:id="@+id/textView_three_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lineSpacingExtra="12sp"
+        android:text="Question3:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        android:typeface="sans"
+        app:fontFamily="casual" />
 
+    <TextView
+        android:id="@+id/textView_three_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:lineSpacingExtra="12sp"
+        android:text="What kind of phone are you using?"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textSize="24sp"
+        android:typeface="sans"
+        app:fontFamily="serif" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <RadioButton
+            android:id="@+id/radioButton_three_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:lineSpacingExtra="12sp"
+            android:text="2G"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="24sp"
+            android:typeface="serif" />
+
+        <RadioButton
+            android:id="@+id/radioButton_three_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="12sp"
+            android:text="3G"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="24sp"
+            android:typeface="serif" />
+
+        <RadioButton
+            android:id="@+id/radioButton_three_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="12sp"
+            android:text="4G"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="24sp"
+            android:typeface="serif" />
+
+        <RadioButton
+            android:id="@+id/radioButton_three_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="12sp"
+            android:text="Others"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="24sp"
+            android:typeface="serif" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_three"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:background="#009688"
+        android:lineSpacingExtra="12sp"
+        android:onClick="onclick_buttonthree"
+        android:text="Next"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:typeface="serif" />
 
     <!-- END    : Your code should be within this block -->
-
 </LinearLayout>
