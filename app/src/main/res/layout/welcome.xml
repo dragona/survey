@@ -1,9 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingTop="30sp"
+    android:paddingBottom="30sp"
+    android:paddingLeft="50sp"
+    android:paddingRight="50sp"
+    >
 
     <!--  Start : Your code should be within this block -->
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="WELCOME TO"
+        android:layout_marginTop="30sp"/>
+
+    <TextView
+        android:id="@+id/take_part"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="TAKE PART IN OUR SURVEY!"
+        android:layout_below="@id/welcome"
+        />
+    <TextView
+        android:id="@+id/before"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Before we start,here are things you should know:"
+        android:layout_below="@id/take_part"
+        android:layout_marginTop="40sp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/para1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="- Please be honest when making your choice."
+        android:layout_below="@id/before"
+        android:layout_marginTop="40sp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/para2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="- We are just doing a reserch so you don't have to fake your information."
+        android:layout_below="@id/para1"
+        android:layout_marginTop="40sp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/para3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="- Please follow the step we designed for you and don't skip any questions."
+        android:layout_below="@id/para2"
+        android:layout_marginTop="40sp"
+        android:layout_centerHorizontal="true"
+        />
+    <CheckBox
+        android:id="@+id/accept"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I accept these requests"
+        android:layout_below="@id/para3"
+        android:layout_marginTop="80sp"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:text="LET'S START!"
+        android:textSize="20sp"
+        android:layout_below="@id/accept"
+        android:layout_marginTop="40sp"
+        android:background="@color/colorGreen"
+        android:layout_centerHorizontal="true"
+
+        />
 
 
     <!-- END    : Your code should be within this block -->

@@ -2,10 +2,103 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingTop="30sp"
+    android:paddingBottom="30sp"
+    android:paddingLeft="50sp"
+    android:paddingRight="50sp">
 
     <!--  Start : Your code should be within this block -->
+    <TextView
+        android:id="@+id/ques_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 4"
+        android:textSize="25sp"
+        android:textStyle="bold"
 
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60sp"
+        android:text="What functions does your phone have now ?"
+        android:textSize="20sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Music functions"
+        android:layout_marginTop="40sp"
+        android:layout_marginStart="40sp"
+        android:layout_marginEnd="40sp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Photo functions"
+        android:layout_marginStart="40sp"
+        android:layout_marginEnd="40sp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Game functions"
+        android:layout_marginStart="40sp"
+        android:layout_marginEnd="40sp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Business functions(Word,Excel,ect)"
+        android:layout_marginStart="40sp"
+        android:layout_marginEnd="40sp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GPS functions"
+        android:layout_marginStart="40sp"
+        android:layout_marginEnd="40sp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data functions(Bluetooth,WLAN,ect)"
+        android:layout_marginStart="40sp"
+        android:layout_marginEnd="40sp"
+        />
+
+    <CheckBox
+        android:id="@+id/checkBox7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Others"
+        android:layout_marginStart="40sp"
+        android:layout_marginEnd="40sp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:text="NEXT"
+        android:textSize="20sp"
+        android:layout_marginTop="80sp"
+        android:background="@color/colorGreen"
+        />
 
     <!-- END    : Your code should be within this block -->
 

@@ -2,10 +2,38 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingTop="30sp"
+    android:paddingBottom="30sp"
+    android:paddingLeft="50sp"
+    android:paddingRight="50sp">
 
     <!--  Start : Your code should be within this block -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:text="THANK YOU"
+        android:layout_marginTop="30sp"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="FOR YOUR ANSWERS !"
+        />
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/finish"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:text="FINISH"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:background="@color/colorGreen"
+        />
 
     <!-- END    : Your code should be within this block -->
 

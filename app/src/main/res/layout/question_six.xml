@@ -2,11 +2,46 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingTop="30sp"
+    android:paddingBottom="30sp"
+    android:paddingLeft="50sp"
+    android:paddingRight="50sp">
 
     <!--  Start : Your code should be within this block -->
+    <TextView
+        android:id="@+id/ques_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 6"
+        android:textSize="25sp"
+        android:textStyle="bold"
 
-
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60sp"
+        android:text="What function do you expect your phone to have in the future ?"
+        android:textSize="20sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:text="NEXT"
+        android:textSize="20sp"
+        android:layout_marginTop="300sp"
+        android:background="@color/colorGreen"
+        />
     <!-- END    : Your code should be within this block -->
 
 </LinearLayout>
