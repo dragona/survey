@@ -5,7 +5,98 @@
     android:orientation="vertical">
 
     <!--  Start : Your code should be within this block -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Question 4"
+        android:textSize="36sp"
+        android:textColor="#000000"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="40dp"
+        android:text="What function does your phone have now?"
+        android:textSize="20sp" />
+    <CheckBox
+        android:id="@+id/q4_musicfunc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="90dp"
+        android:colorControlActivated="#00ff00"
+        android:text="Music functions"
+        android:textColor="#000000"/>
+    <CheckBox
+        android:id="@+id/q4_photofunc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="90dp"
+        android:colorControlActivated="#00ff00"
+        android:text="Photo funcions"
+        android:textColor="#000000"/>
+    <CheckBox
+        android:id="@+id/q4_gamefunc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="90dp"
+        android:colorControlActivated="#00ff00"
+        android:text="Game functions"
+        android:textColor="#000000"/>
+    <CheckBox
+        android:id="@+id/q4_businessfunc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="90dp"
+        android:colorControlActivated="#00ff00"
+        android:text="Business functions(Word,Excel,ect)"
+        android:textColor="#000000"/>
+    <CheckBox
+        android:id="@+id/q4_gpsfunc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="90dp"
+        android:colorControlActivated="#00ff00"
+        android:text="GPS functions"
+        android:textColor="#000000"/>
+    <CheckBox
+        android:id="@+id/q4_datafunc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="90dp"
+        android:colorControlActivated="#00ff00"
+        android:text="Data functions(Bluetooth,WLAN,ect)"
+        android:textColor="#000000"/>
+    <CheckBox
+        android:id="@+id/q4_others"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="90dp"
+        android:colorControlActivated="#00ff00"
+        android:text="Others"
+        android:textColor="#000000"/>
+    <Button
+        android:id="@+id/q4_next"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="NEXT"
+        android:textSize="20sp"
+        android:background="#00ff00"
+        android:textColor="#000000"/>
 
     <!-- END    : Your code should be within this block -->
 

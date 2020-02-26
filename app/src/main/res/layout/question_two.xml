@@ -5,8 +5,85 @@
     android:orientation="vertical">
 
     <!--  Start : Your code should be within this block -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Question 2"
+        android:textSize="36sp"
+        android:textColor="#000000"/>
 
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="40dp"
+        android:text="How much does your phone cost?"
+        android:textSize="20sp" />
+    <RadioGroup
+        android:id="@+id/q2_radioGroupId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RadioButton
+        android:id="@+id/q2_under1000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="105dp"
+        android:colorControlActivated="#00ff00"
+        android:text="Under 1000"
+        android:textColor="#000000"/>
+    <RadioButton
+        android:id="@+id/q2_1000_1999"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="105dp"
+        android:colorControlActivated="#00ff00"
+        android:text="1000-1999"
+        android:textColor="#000000"/>
+    <RadioButton
+        android:id="@+id/q2_2000_2999"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="105dp"
+        android:colorControlActivated="#00ff00"
+        android:text="2000-2999"
+        android:textColor="#000000"/>
+    <RadioButton
+        android:id="@+id/q2_3000_3999"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="105dp"
+        android:colorControlActivated="#00ff00"
+        android:text="3000-3999"
+        android:textColor="#000000"/>
+    <RadioButton
+        android:id="@+id/q2_Morethan4000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="105dp"
+        android:colorControlActivated="#00ff00"
+        android:text="More than 4000"
+        android:textColor="#000000"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/q2_next"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="NEXT"
+        android:textSize="20sp"
+        android:background="#00ff00"
+        android:textColor="#000000"/>
     <!-- END    : Your code should be within this block -->
-
 </LinearLayout>

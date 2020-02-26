@@ -5,7 +5,43 @@
     android:orientation="vertical">
 
     <!--  Start : Your code should be within this block -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Question 6"
+        android:textSize="36sp"
+        android:textColor="#000000"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="40dp"
+        android:text="What functions do you expect your phone to have in the future?"
+        android:textSize="20sp" />
+    <EditText
+        android:id="@+id/q6_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:textColor="#000000"
+        android:theme="@color/green"/>
+    <Button
+        android:id="@+id/q6_next"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="NEXT"
+        android:textSize="20sp"
+        android:background="#00ff00"
+        android:textColor="#000000"/>
 
     <!-- END    : Your code should be within this block -->
 
