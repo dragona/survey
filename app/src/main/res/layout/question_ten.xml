@@ -5,8 +5,77 @@
     android:orientation="vertical">
 
     <!--  Start : Your code should be within this block -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Question 10"
+        android:textSize="36sp"
+        android:textColor="#000000"/>
 
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="40dp"
+        android:text="How old are you?"
+        android:textSize="20sp" />
+    <RadioGroup
+        android:id="@+id/q10_radioGroupId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RadioButton
+        android:id="@+id/q10_under18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="105dp"
+        android:colorControlActivated="#00ff00"
+        android:text="Under 18"
+        android:textColor="#000000"/>
+    <RadioButton
+        android:id="@+id/q10_19_25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="105dp"
+        android:colorControlActivated="#00ff00"
+        android:text="19-25"
+        android:textColor="#000000"/>
+    <RadioButton
+        android:id="@+id/q10_25_35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="105dp"
+        android:colorControlActivated="#00ff00"
+        android:text="25-35"
+        android:textColor="#000000"/>
+    <RadioButton
+        android:id="@+id/q10_beyond35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="105dp"
+        android:colorControlActivated="#00ff00"
+        android:text="Beyond 35"
+        android:textColor="#000000"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/q10_next"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="230dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="NEXT"
+        android:textSize="20sp"
+        android:background="#00ff00"
+        android:textColor="#000000"/>
     <!-- END    : Your code should be within this block -->
 
 </LinearLayout>

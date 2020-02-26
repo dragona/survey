@@ -5,8 +5,91 @@
     android:orientation="vertical">
 
     <!--  Start : Your code should be within this block -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Question 7"
+        android:textSize="36sp"
+        android:textColor="#000000"/>
 
-
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:layout_marginTop="40dp"
+        android:text="In which condition will you buy a new phone?"
+        android:textSize="20sp" />
+    <RadioGroup
+        android:id="@+id/q7_radioGroupId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RadioButton
+        android:id="@+id/q7_opuse12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="60dp"
+        android:colorControlActivated="#00ff00"
+        android:text="When the old phone has been used for a year or two.(but it still works)"
+        android:textColor="#000000"/>
+    <RadioButton
+        android:id="@+id/q7_opusethan3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="60dp"
+        android:colorControlActivated="#00ff00"
+        android:text="When the old phone has been used for more than three years.(but it still works)"
+        android:textColor="#000000"/>
+    <RadioButton
+        android:id="@+id/q7_opbreak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="60dp"
+        android:colorControlActivated="#00ff00"
+        android:text="When the old phone breaks down."
+        android:textColor="#000000"/>
+    <RadioButton
+        android:id="@+id/q7_nprelease"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="60dp"
+        android:colorControlActivated="#00ff00"
+        android:text="When a new phone is released."
+        android:textColor="#000000"/>
+    <RadioButton
+        android:id="@+id/q7_others"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginRight="60dp"
+        android:colorControlActivated="#00ff00"
+        android:text="Others"
+        android:textColor="#000000"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/q7_next"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="NEXT"
+        android:textSize="20sp"
+        android:background="#00ff00"
+        android:textColor="#000000"/>
     <!-- END    : Your code should be within this block -->
 
 </LinearLayout>
