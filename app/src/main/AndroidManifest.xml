@@ -8,7 +8,8 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:name=".Data">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,6 +17,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".QuesOne"></activity>
+        <activity android:name=".QuesTwo"></activity>
+        <activity android:name=".QuesThree"></activity>
+        <activity android:name=".QuesFour"></activity>
+        <activity android:name=".QuesFive"></activity>
+        <activity android:name=".QuesSix"></activity>
+        <activity android:name=".QuesSeven"></activity>
+        <activity android:name=".QuesEight"></activity>
+        <activity android:name=".QuesNine"></activity>
+        <activity android:name=".QuesTen"></activity>
+        <activity android:name=".QuesEleven"></activity>
+        <activity android:name=".QuesTwelve"></activity>
+        <activity android:name=".FinishSurvey"></activity>
+        <activity android:name=".SvyReports"></activity>
     </application>
 
 </manifest>

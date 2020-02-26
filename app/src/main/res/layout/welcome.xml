@@ -33,7 +33,6 @@
         android:text="Before we start,here are things you should know:"
         android:layout_below="@id/take_part"
         android:layout_marginTop="40sp"
-        android:layout_centerHorizontal="true"
         />
     <TextView
         android:id="@+id/para1"
@@ -43,7 +42,6 @@
         android:text="- Please be honest when making your choice."
         android:layout_below="@id/before"
         android:layout_marginTop="40sp"
-        android:layout_centerHorizontal="true"
         />
     <TextView
         android:id="@+id/para2"
@@ -53,7 +51,6 @@
         android:text="- We are just doing a reserch so you don't have to fake your information."
         android:layout_below="@id/para1"
         android:layout_marginTop="40sp"
-        android:layout_centerHorizontal="true"
         />
     <TextView
         android:id="@+id/para3"
@@ -63,7 +60,6 @@
         android:text="- Please follow the step we designed for you and don't skip any questions."
         android:layout_below="@id/para2"
         android:layout_marginTop="40sp"
-        android:layout_centerHorizontal="true"
         />
     <CheckBox
         android:id="@+id/accept"
@@ -75,6 +71,7 @@
         android:layout_centerHorizontal="true"
         />
     <Button
+        android:id="@+id/btn_wel"
         android:layout_width="match_parent"
         android:layout_height="70sp"
         android:text="LET'S START!"
@@ -83,7 +80,7 @@
         android:layout_marginTop="40sp"
         android:background="@color/colorGreen"
         android:layout_centerHorizontal="true"
-
+        android:onClick="enterSurvey"
         />
 
 

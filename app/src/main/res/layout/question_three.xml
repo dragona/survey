@@ -22,13 +22,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60sp"
-        android:text="What kind of phone are you using ?"
+        android:text="@string/ques_3"
         android:textSize="20sp"
         android:layout_marginStart="20sp"
         android:layout_marginEnd="20sp"
         />
 
     <RadioGroup
+        android:id="@+id/rg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40sp"
@@ -70,6 +71,7 @@
         android:textSize="20sp"
         android:layout_marginTop="80sp"
         android:background="@color/colorGreen"
+        android:onClick="enterNext"
         />
     <!-- END    : Your code should be within this block -->
 

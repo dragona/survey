@@ -22,12 +22,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60sp"
-        android:text="What function do you expect your phone to have in the future ?"
+        android:text="@string/ques_6"
         android:textSize="20sp"
         android:layout_marginStart="20sp"
         android:layout_marginEnd="20sp"
         />
     <EditText
+        android:id="@+id/edt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20sp"
@@ -41,6 +42,7 @@
         android:textSize="20sp"
         android:layout_marginTop="300sp"
         android:background="@color/colorGreen"
+        android:onClick="enterNext"
         />
     <!-- END    : Your code should be within this block -->
 

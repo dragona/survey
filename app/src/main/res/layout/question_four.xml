@@ -22,14 +22,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60sp"
-        android:text="What functions does your phone have now ?"
+        android:text="@string/ques_4"
         android:textSize="20sp"
         android:layout_marginStart="20sp"
         android:layout_marginEnd="20sp"
         />
 
     <CheckBox
-        android:id="@+id/checkBox"
+        android:id="@+id/checkBox1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Music functions"
@@ -98,6 +98,7 @@
         android:textSize="20sp"
         android:layout_marginTop="80sp"
         android:background="@color/colorGreen"
+        android:onClick="enterNext"
         />
 
     <!-- END    : Your code should be within this block -->
