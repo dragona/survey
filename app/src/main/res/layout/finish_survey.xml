@@ -3,10 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingTop="30sp"
-    android:paddingBottom="30sp"
-    android:paddingLeft="50sp"
-    android:paddingRight="50sp">
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp">
 
     <!--  Start : Your code should be within this block -->
     <TextView
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:textSize="30sp"
         android:text="THANK YOU"
-        android:layout_marginTop="30sp"/>
+        android:layout_marginTop="30dp"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,7 +28,7 @@
         android:src="@drawable/finish"/>
     <Button
         android:layout_width="match_parent"
-        android:layout_height="70sp"
+        android:layout_height="70dp"
         android:text="FINISH"
         android:textSize="20sp"
         android:layout_marginTop="40dp"

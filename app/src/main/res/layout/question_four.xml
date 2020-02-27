@@ -3,10 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingTop="30sp"
-    android:paddingBottom="30sp"
-    android:paddingLeft="50sp"
-    android:paddingRight="50sp">
+    android:paddingTop="30dp"
+    android:paddingBottom="30dp"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp">
 
     <!--  Start : Your code should be within this block -->
     <TextView
@@ -21,11 +21,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60sp"
+        android:layout_marginTop="60dp"
         android:text="@string/ques_4"
         android:textSize="20sp"
-        android:layout_marginStart="20sp"
-        android:layout_marginEnd="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         />
 
     <CheckBox
@@ -33,9 +33,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Music functions"
-        android:layout_marginTop="40sp"
-        android:layout_marginStart="40sp"
-        android:layout_marginEnd="40sp"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
         />
 
     <CheckBox
@@ -43,8 +43,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Photo functions"
-        android:layout_marginStart="40sp"
-        android:layout_marginEnd="40sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
         />
 
     <CheckBox
@@ -52,8 +52,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Game functions"
-        android:layout_marginStart="40sp"
-        android:layout_marginEnd="40sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
         />
 
     <CheckBox
@@ -61,8 +61,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Business functions(Word,Excel,ect)"
-        android:layout_marginStart="40sp"
-        android:layout_marginEnd="40sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
         />
 
     <CheckBox
@@ -70,8 +70,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="GPS functions"
-        android:layout_marginStart="40sp"
-        android:layout_marginEnd="40sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
         />
 
     <CheckBox
@@ -79,8 +79,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Data functions(Bluetooth,WLAN,ect)"
-        android:layout_marginStart="40sp"
-        android:layout_marginEnd="40sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
         />
 
     <CheckBox
@@ -88,15 +88,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Others"
-        android:layout_marginStart="40sp"
-        android:layout_marginEnd="40sp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
         />
     <Button
         android:layout_width="match_parent"
-        android:layout_height="70sp"
+        android:layout_height="70dp"
         android:text="NEXT"
         android:textSize="20sp"
-        android:layout_marginTop="80sp"
+        android:layout_marginTop="40dp"
         android:background="@color/colorGreen"
         android:onClick="enterNext"
         />

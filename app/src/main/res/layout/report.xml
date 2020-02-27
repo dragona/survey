@@ -7,7 +7,7 @@
 <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="25sp"
+    android:padding="25dp"
     android:orientation="vertical"
 
     >
@@ -17,8 +17,8 @@
         android:textSize="30sp"
         android:text="Here is your report:"
         android:textColor="@color/colorOrg"
-        android:layout_marginTop="10sp"
-        android:layout_marginBottom="10sp"/>
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,7 +30,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10sp"
+            android:layout_marginTop="10dp"
             >
             <ImageView
                 android:layout_width="30dp"
@@ -136,7 +136,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10sp"
+            android:layout_marginTop="10dp"
             >
             <ImageView
                 android:layout_width="30dp"
@@ -171,7 +171,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10sp"
+            android:layout_marginTop="10dp"
             >
             <ImageView
                 android:layout_width="30dp"
@@ -206,7 +206,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10sp"
+            android:layout_marginTop="10dp"
             >
             <ImageView
                 android:layout_width="30dp"
@@ -241,7 +241,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10sp"
+            android:layout_marginTop="10dp"
             >
             <ImageView
                 android:layout_width="30dp"
@@ -276,7 +276,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10sp"
+            android:layout_marginTop="10dp"
             >
             <ImageView
                 android:layout_width="30dp"
@@ -311,7 +311,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10sp"
+            android:layout_marginTop="10dp"
             >
             <ImageView
                 android:layout_width="30dp"
@@ -346,7 +346,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10sp"
+            android:layout_marginTop="10dp"
             >
             <ImageView
                 android:layout_width="30dp"
@@ -381,7 +381,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10sp"
+            android:layout_marginTop="10dp"
             >
             <ImageView
                 android:layout_width="30dp"
@@ -416,7 +416,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="10sp"
+            android:layout_marginTop="10dp"
             >
             <ImageView
                 android:layout_width="30dp"
@@ -448,7 +448,7 @@
        android:gravity="center_horizontal"
        android:textColor="@color/colorOrg"
        android:textSize="35sp"
-       android:layout_marginTop="20sp"/>
+       android:layout_marginTop="20dp"/>
 
 
 
