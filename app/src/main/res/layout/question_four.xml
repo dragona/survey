@@ -1,12 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
 
     <!--  Start : Your code should be within this block -->
 
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question 4 "
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        android:textSize="23sp"
+        android:textColor="#000000"
+        />
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="What functions does your phone have now ?"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:textSize="18sp"
+        android:layout_below="@id/txt1"
+        />
+
+    <RadioGroup
+        android:id="@+id/rgp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt2"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="90dp"
+        >
+        <CheckBox
+            android:id="@+id/rbtn1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Music functions"
+            android:textSize="16dp"
+
+
+            />
+        <CheckBox
+            android:id="@+id/rbtn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Photo functions"
+            android:textSize="16dp"
+            />
+        <CheckBox
+            android:id="@+id/rbtn3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Game functions"
+            android:textSize="16dp"
+            />
+        <CheckBox
+            android:id="@+id/rbtn4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Business functions(Word,Excel,ect.)"
+            android:textSize="16dp"
+            />
+        <CheckBox
+            android:id="@+id/rbtn5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GPS functions"
+            android:textSize="16dp"
+            />
+        <CheckBox
+            android:id="@+id/rbtn6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data functions(Bluetooth,WLAN,ect.)"
+            android:textSize="16dp"
+            />
+        <CheckBox
+            android:id="@+id/rbtn7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others."
+            android:textSize="16dp"
+            />
+
+
+    </RadioGroup>
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/rgp1"
+        android:layout_marginTop="80dp"
+        android:text="NEXT"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:onClick="next4"
+        />
 
     <!-- END    : Your code should be within this block -->
 
-</LinearLayout>
+</RelativeLayout>

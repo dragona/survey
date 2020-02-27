@@ -9,6 +9,20 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".finish_survey"></activity>
+        <activity android:name=".question_twelve" />
+        <activity android:name=".question_eleven" />
+        <activity android:name=".question_ten" />
+        <activity android:name=".question_nine" />
+        <activity android:name=".question_eight" />
+        <activity android:name=".question_seven" />
+        <activity android:name=".question_six" />
+        <activity android:name=".question_five" />
+        <activity android:name=".question_four" />
+        <activity android:name=".question_three" />
+        <activity android:name=".question_two" />
+        <activity android:name=".question_one" />
+        <activity android:name=".Report" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
