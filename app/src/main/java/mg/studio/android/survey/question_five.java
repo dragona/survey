@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.Toast;
 
 public class question_five extends AppCompatActivity {
 
@@ -19,7 +20,7 @@ public class question_five extends AppCompatActivity {
     private CheckBox rgp5_6;
     private CheckBox rgp5_7;
 
-    private String rgp5_string=new String();
+    private String rgp5_string="Null";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +42,7 @@ public class question_five extends AppCompatActivity {
             rgp5_string=rgp5_1.getText().toString().trim();
         }
         if(rgp5_2.isChecked()){
-            if(rgp5_string.isEmpty()){
+            if(rgp5_string=="Null"){
                 rgp5_string=rgp5_2.getText().toString().trim();
             }
             else {
@@ -49,7 +50,7 @@ public class question_five extends AppCompatActivity {
             }
         }
         if(rgp5_3.isChecked()){
-            if(rgp5_string.isEmpty()){
+            if(rgp5_string=="Null"){
                 rgp5_string=rgp5_3.getText().toString().trim();
             }
             else {
@@ -57,7 +58,7 @@ public class question_five extends AppCompatActivity {
             }
         }
         if(rgp5_4.isChecked()){
-            if(rgp5_string.isEmpty()){
+            if(rgp5_string=="Null"){
                 rgp5_string=rgp5_4.getText().toString().trim();
             }
             else {
@@ -65,7 +66,7 @@ public class question_five extends AppCompatActivity {
             }
         }
         if(rgp5_5.isChecked()){
-            if(rgp5_string.isEmpty()){
+            if(rgp5_string=="Null"){
                 rgp5_string=rgp5_5.getText().toString().trim();
             }
             else {
@@ -73,7 +74,7 @@ public class question_five extends AppCompatActivity {
             }
         }
         if(rgp5_6.isChecked()){
-            if(rgp5_string.isEmpty()){
+            if(rgp5_string=="Null"){
                 rgp5_string=rgp5_6.getText().toString().trim();
             }
             else {
@@ -81,7 +82,7 @@ public class question_five extends AppCompatActivity {
             }
         }
         if(rgp5_7.isChecked()){
-            if(rgp5_string.isEmpty()){
+            if(rgp5_string=="Null"){
                 rgp5_string=rgp5_7.getText().toString().trim();
             }
             else {
@@ -91,8 +92,13 @@ public class question_five extends AppCompatActivity {
 
         answer=rgp5_string;
 
-        Intent intent5 = new Intent(this,question_six.class);
+        if(rgp5_string!="Null") {
+            Intent intent5 = new Intent(this,question_six.class);
+            startActivity(intent5);
+        }else{
+            Toast.makeText(question_five.this,"Please select at least one option.",Toast.LENGTH_SHORT).show();
+        }
 
-        startActivity(intent5);
+
     }
 }

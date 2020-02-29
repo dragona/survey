@@ -147,4 +147,16 @@
         android:layout_below="@id/txt11"
         />
 
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:text="FINISH"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimary"
+        android:onClick="save"
+        />
+
 </RelativeLayout>

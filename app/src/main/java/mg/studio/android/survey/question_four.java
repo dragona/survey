@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.Toast;
 
 
 public class question_four extends AppCompatActivity {
@@ -20,7 +21,7 @@ public class question_four extends AppCompatActivity {
     private CheckBox rgp4_6;
     private CheckBox rgp4_7;
 
-    private String rgp4_string=new String();
+    private String rgp4_string="Null";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +45,7 @@ public class question_four extends AppCompatActivity {
         }
 
         if(rgp4_2.isChecked()){
-            if(rgp4_string.isEmpty()){
+            if(rgp4_string=="Null"){
                 rgp4_string=rgp4_2.getText().toString().trim();
             }
         else {
@@ -53,7 +54,7 @@ public class question_four extends AppCompatActivity {
         }
 
         if(rgp4_3.isChecked()){
-            if(rgp4_string.isEmpty()){
+            if(rgp4_string=="Null"){
                 rgp4_string=rgp4_3.getText().toString().trim();
             }
             else {
@@ -62,7 +63,7 @@ public class question_four extends AppCompatActivity {
         }
 
         if(rgp4_4.isChecked()){
-            if(rgp4_string.isEmpty()){
+            if(rgp4_string=="Null"){
                 rgp4_string=rgp4_4.getText().toString().trim();
             }
             else {
@@ -71,7 +72,7 @@ public class question_four extends AppCompatActivity {
         }
 
         if(rgp4_5.isChecked()){
-            if(rgp4_string.isEmpty()){
+            if(rgp4_string=="Null"){
                 rgp4_string=rgp4_5.getText().toString().trim();
             }
             else {
@@ -80,7 +81,7 @@ public class question_four extends AppCompatActivity {
         }
 
         if(rgp4_6.isChecked()){
-            if(rgp4_string.isEmpty()){
+            if(rgp4_string=="Null"){
                 rgp4_string=rgp4_6.getText().toString().trim();
             }
             else {
@@ -89,7 +90,7 @@ public class question_four extends AppCompatActivity {
         }
 
         if(rgp4_7.isChecked()){
-            if(rgp4_string.isEmpty()){
+            if(rgp4_string=="Null"){
                 rgp4_string=rgp4_7.getText().toString().trim();
             }
             else {
@@ -99,8 +100,11 @@ public class question_four extends AppCompatActivity {
 
         answer=rgp4_string;
 
-        Intent intent4 = new Intent(this,question_five.class);
-
-        startActivity(intent4);
+        if(rgp4_string!="Null") {
+            Intent intent4 = new Intent(this,question_five.class);
+            startActivity(intent4);
+        }else{
+            Toast.makeText(question_four.this,"Please select at least one option.",Toast.LENGTH_SHORT).show();
+        }
     }
 }

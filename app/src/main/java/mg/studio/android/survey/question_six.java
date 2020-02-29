@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class question_six extends AppCompatActivity {
 
@@ -14,7 +15,7 @@ public class question_six extends AppCompatActivity {
 
     private EditText et1;
 
-    private String rgp6_string;
+    private String rgp6_string=new String();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,8 +32,11 @@ public class question_six extends AppCompatActivity {
 
         answer=rgp6_string;
 
-        Intent intent6 = new Intent(this,question_seven.class);
-
-        startActivity(intent6);
+        if(rgp6_string.equals("")) {
+            Toast.makeText(question_six.this,"Please input your answers.",Toast.LENGTH_SHORT).show();
+        }else{
+            Intent intent6 = new Intent(this,question_seven.class);
+            startActivity(intent6);
+        }
     }
 }
