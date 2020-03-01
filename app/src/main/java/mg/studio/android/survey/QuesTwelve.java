@@ -24,7 +24,7 @@ public class QuesTwelve extends Activity {
         try{
             RadioButton checked_btn=findViewById(radio_group.getCheckedRadioButtonId());
             String checked_val=checked_btn.getText().toString();
-            app.setReports(11,checked_val);
+            app.setReports(11,getResources().getString(R.string.ques_12),checked_val);
             Intent intent=new Intent();
             intent.setClass(this,FinishSurvey.class);
             startActivity(intent);

@@ -9,29 +9,36 @@
     android:paddingRight="50dp">
 
     <!--  Start : Your code should be within this block -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="30sp"
-        android:text="THANK YOU"
-        android:layout_marginTop="30dp"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="20sp"
-        android:text="FOR YOUR ANSWERS !"
-        />
-    <ImageView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="300dp"
-        android:src="@drawable/finish"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="THANK YOU"
+            android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="FOR YOUR ANSWERS !"
+            />
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:src="@drawable/finish"/>
+    </LinearLayout>
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:text="FINISH"
         android:textSize="20sp"
-        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
         android:background="@color/colorGreen"
         android:onClick="enterNext"
         />

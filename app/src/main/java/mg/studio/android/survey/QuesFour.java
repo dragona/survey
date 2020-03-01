@@ -46,7 +46,7 @@ public class QuesFour extends Activity {
         if(tmp == null || tmp.length() <= 0){
             Toast.makeText(QuesFour.this,"please at least choose one option!",Toast.LENGTH_SHORT).show();
         }else{
-            app.setReports(3,tmp);
+            app.setReports(3,getResources().getString(R.string.ques_4),tmp);
             Intent intent=new Intent();
             intent.setClass(this,QuesFive.class);
             startActivity(intent);

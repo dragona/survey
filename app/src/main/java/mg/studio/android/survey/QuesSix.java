@@ -24,7 +24,7 @@ public class QuesSix extends Activity {
         if(tmp==null||"".equals(tmp)){
             Toast.makeText(QuesSix.this,"Please fill the blank",Toast.LENGTH_SHORT).show();
         }else{
-            app.setReports(5,tmp);
+            app.setReports(5,getResources().getString(R.string.ques_6),tmp);
             Intent intent=new Intent();
             intent.setClass(this,QuesSeven.class);
             startActivity(intent);

@@ -3,89 +3,92 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingTop="30dp"
-    android:paddingBottom="30dp"
     android:paddingLeft="50dp"
-    android:paddingRight="50dp">
+    android:paddingTop="30dp"
+    android:paddingRight="50dp"
+    android:paddingBottom="30dp">
 
     <!--  Start : Your code should be within this block -->
-    <TextView
-        android:id="@+id/ques_num"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Question 12"
-        android:textSize="25sp"
-        android:textStyle="bold"
-
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:text="@string/ques_12"
-        android:textSize="20sp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        />
-
-    <RadioGroup
-        android:id="@+id/rg"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginEnd="40dp"
-        >
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/ques_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 12"
+            android:textSize="25sp"
+            android:textStyle="bold"
 
-        <RadioButton
-            android:id="@+id/radioButton1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="60dp"
+            android:text="@string/ques_12"
+            android:textSize="20sp" />
+
+
+
+        <RadioGroup
+            android:id="@+id/rg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="I haven't got a job"
-            android:layout_marginBottom="10dp"
-            />
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="40dp">
 
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Under 3000"
-            android:layout_marginBottom="10dp"
-            />
+            <RadioButton
+                android:id="@+id/radioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="I haven't got a job" />
 
-        <RadioButton
-            android:id="@+id/radioButton3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="3000-5000"
-            android:layout_marginBottom="10dp"
-            />
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Under 3000" />
 
-        <RadioButton
-            android:id="@+id/radioButton4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="5000-10000"
-            android:layout_marginBottom="10dp"
-            />
-        <RadioButton
-            android:id="@+id/radioButton5"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="more than 10000"
-            android:layout_marginBottom="10dp"
-            />
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="3000-5000" />
 
-    </RadioGroup>
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="5000-10000" />
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="more than 10000" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
     <Button
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        android:text="NEXT"
-        android:textSize="20sp"
-        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
         android:background="@color/colorGreen"
         android:onClick="enterNext"
-        />
+        android:text="NEXT"
+        android:textSize="20sp" />
     <!-- END    : Your code should be within this block -->
 
 </LinearLayout>
