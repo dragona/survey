@@ -15,8 +15,6 @@ public class SvyReports extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.report);
         app=(Data)getApplication();
-//        String []res=app.getReports();
-//        JSONObject jsonObj=app.getReports();
         ((TextView)findViewById(R.id.ans_1)).setText(app.getAnswer(getResources().getString(R.string.ques_1)));
         ((TextView)findViewById(R.id.ans_2)).setText(app.getAnswer(getResources().getString(R.string.ques_2)));
         ((TextView)findViewById(R.id.ans_3)).setText(app.getAnswer(getResources().getString(R.string.ques_3)));

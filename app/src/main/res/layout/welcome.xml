@@ -73,7 +73,7 @@
     <Button
         android:id="@+id/btn_wel"
         android:layout_width="match_parent"
-        android:layout_height="70sp"
+        android:layout_height="70dp"
         android:text="LET'S START!"
         android:textSize="20sp"
         android:layout_alignParentBottom="true"
