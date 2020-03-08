@@ -101,6 +101,16 @@
         android:onClick="start"
         />
 
+    <Button
+        android:id="@+id/btn_json"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:text="JSON question"
+        android:layout_marginLeft="240dp"
+        android:background="@color/colorPrimary"
+        android:onClick="json"
+        />
 
     <!-- END    : Your code should be within this block -->
 </RelativeLayout>
