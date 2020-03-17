@@ -12,6 +12,7 @@ import android.util.TypedValue;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -75,13 +76,30 @@ public class MainActivity extends AppCompatActivity {
         //add views to inner layout, add inner layout and nextbtn to outer layout
         List listQNum=createQuesNum();
         List listQName=createQuesName();
-        List listOpts=createRbtns(quesOpts);
         inLinearLayout.addView((TextView)listQNum.get(0),(LinearLayout.LayoutParams)listQNum.get(1));
         inLinearLayout.addView((TextView)listQName.get(0),(LinearLayout.LayoutParams)listQName.get(1));
-        inLinearLayout.addView((RadioGroup)listOpts.get(0),(LinearLayout.LayoutParams)listOpts.get(1));
+        List listOpts=new ArrayList();
+        switch (curQType){
+            case "single":
+                listOpts=createRbtns(quesOpts);
+                inLinearLayout.addView((RadioGroup)listOpts.get(0),(LinearLayout.LayoutParams)listOpts.get(1));
+                break;
+            case "multiple":
+                listOpts=createCheckBox(quesOpts);
+                inLinearLayout.addView((RadioGroup)listOpts.get(0),(LinearLayout.LayoutParams)listOpts.get(1));
+                break;
+            case "edittext":
+                listOpts=createEdt();
+                inLinearLayout.addView((EditText)listOpts.get(0),(LinearLayout.LayoutParams)listOpts.get(1));
+                break;
+
+        }
+//        List listOpts=createRbtns(quesOpts);
+
+//        inLinearLayout.addView((RadioGroup)listOpts.get(0),(LinearLayout.LayoutParams)listOpts.get(1));
         outLinearLayout.addView(inLinearLayout,inparams);
 
-        List next=createNext();
+        List next=createNext(listOpts);
         outLinearLayout.addView((Button)next.get(0),(LinearLayout.LayoutParams)next.get(1));
 
         setContentView(outLinearLayout);
@@ -158,7 +176,55 @@ public class MainActivity extends AppCompatActivity {
         return list;
     }
 
-    private List createNext(){
+    //create checkbox
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
+    private List createCheckBox(JSONArray quesOpts){
+        //set the params of radiogroup
+        List list=new ArrayList();
+        List<CheckBox> box=new ArrayList<CheckBox>();
+        RadioGroup rg=new RadioGroup(this);
+        LinearLayout.LayoutParams rgParams=new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
+                LinearLayout.LayoutParams.WRAP_CONTENT);
+        rgParams.topMargin=dp2px(40);
+        rgParams.setMarginStart(dp2px(40));
+        rgParams.setMarginEnd(dp2px(40));
+        rg.setId(R.id.btngrp);
+
+        //set the check buttons
+        try{
+            for(int i=0;i<quesOpts.length();++i){
+                CheckBox checkBox=new CheckBox(this);
+                LinearLayout.LayoutParams rbtnParams=new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
+                        LinearLayout.LayoutParams.WRAP_CONTENT);
+                checkBox.setText(quesOpts.getJSONObject(i).getString(i+1+""));
+                checkBox.setLayoutParams(rbtnParams);
+                box.add(checkBox);
+                //add radiobuttons to radiogroup
+                rg.addView(checkBox,rbtnParams);
+            }
+        }catch (Exception e){
+            Log.d("set checkbox error",e.getMessage());
+        }
+        list.add(rg);
+        list.add(rgParams);
+        list.add(box);
+        return list;
+    }
+    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
+    private List createEdt(){
+        List list=new ArrayList();
+        EditText edt=new EditText(this);
+        LinearLayout.LayoutParams edtParams=new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,dp2px(70));
+        edtParams.setMarginStart(dp2px(20));
+        edtParams.setMarginEnd(dp2px(20));
+        edtParams.topMargin=dp2px(20);
+        edt.setLayoutParams(edtParams);
+        list.add(edt);
+        list.add(edtParams);
+        return list;
+    }
+
+    private List createNext(final List listOpts){
         List list=new ArrayList();
         Button next=new Button(this);
         next.setText("NEXT");
@@ -185,6 +251,32 @@ public class MainActivity extends AppCompatActivity {
                         }catch (Exception e){
                             Toast.makeText(MainActivity.this,"please choose an answer first!",Toast.LENGTH_SHORT).show();
                             return;
+                        }
+                        break;
+                    case "multiple":
+                        List<CheckBox> checkboxes=new ArrayList<CheckBox>();
+                        checkboxes=(List<CheckBox>)(listOpts.get(2));
+                        JSONArray opts=gpage.getOpts(gpage.getQuesAsIndex(quesArr,curPage));
+                        String tmp="";
+                        for(int i=0;i<opts.length();++i){
+                            if(checkboxes.get(i).isChecked()){
+                                tmp+=checkboxes.get(i).getText()+" . ";
+                            }
+                        }
+                        if(tmp==null||tmp.length()<=0){
+                            Toast.makeText(MainActivity.this,"please choose at least one answer!",Toast.LENGTH_SHORT).show();
+                            return;
+                        }else{
+                            app.setReports(curPage-1,curQName,tmp);
+                        }
+                        break;
+                    case "edittext":
+                        EditText edt=findViewById(R.id.edttext);
+                        String temp=edt.getText().toString();
+                        if(temp==null|"".equals(temp)){
+                            Toast.makeText(MainActivity.this,"please fill in the blank!",Toast.LENGTH_SHORT).show();
+                        }else {
+                            app.setReports(curPage-1,curQName,temp);
                         }
                         break;
                 }
